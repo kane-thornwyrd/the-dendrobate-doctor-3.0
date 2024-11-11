@@ -13,7 +13,14 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background-color: var(--background);
+}
+
+.rainforest-background {
+  @media (min-width: 768px) {
+    background: url(/images/rainforest.jpg) top center/100% no-repeat fixed var(--background);
+    background-size: cover;
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {

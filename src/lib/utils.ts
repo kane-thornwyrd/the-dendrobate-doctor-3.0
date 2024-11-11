@@ -1,30 +1,87 @@
 import { clsx, type ClassValue } from "clsx"
-import { MutableRefObject, useCallback, useSyncExternalStore } from "react"
 import { twMerge } from "tailwind-merge"
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-export const withWindowMaker : (ref: MutableRefObject<Window | null>) => <T extends (w: Window) => any>(cb: T) => ReturnType<T> | undefined = (ref) => (cb) => {
-  return ref.current !== null ? cb(ref.current) : undefined
+export type TechDateType = { 
+  year : number
+  month : number
+  day : number
 }
 
-export const useMediaQuery = (query: string) => {
-  const subscribe = useCallback(
-    (callback: (this: MediaQueryList, ev: MediaQueryListEvent) => any) => {
-      const matchMedia = window.matchMedia(query)
+export const dateParseRegex = /(?<year>\d{4})(?<month>\d{2})(?<day>\d{2})/
 
-      matchMedia.addEventListener("change", callback)
+export const techDateToHuman = ({ year, month, day }: TechDateType): string => {
+  const MONTHS = [
+    '',
+    'janvier',
+    'février',
+    'mars',
+    'avril',
+    'mai',
+    'juin',
+    'juillet',
+    'août',
+    'septembre',
+    'octobre',
+    'novembre',
+    'décembre',
+  ]
 
-      return () => matchMedia.removeEventListener("change", callback)
-    },
-    [query]
-  );
+  return `${day} ${MONTHS[month]} ${year}`
+}
 
-  const getSnapshot = () => window.matchMedia(query).matches
+export const techDateToValue  = ({ year, month, day } : TechDateType) => `${year}${month}${day}`
 
-  const getServerSnapshot = () => false
+type compOutput = -1 | 0 | 1
 
-  return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+export const compareTechDateString = (a: string) => ( b: string): compOutput | never => {
+  
+  const aTd = parseTechDateString(a)
+  const bTd = parseTechDateString(b)
+
+  return compareTechDate(aTd)(bTd)
+
+}
+
+export const compareTechDate = (a: TechDateType) => (b: TechDateType): compOutput | never => {
+
+  const sign = Math.sign
+
+  switch (true) {
+    case a.year !== b.year: 
+      return sign(a.year - b.year) as compOutput
+    case a.month !== b.month: 
+      return sign(a.month - b.month) as compOutput
+    case a.day !== b.day: 
+    default:
+      return sign(a.day - b.day) as compOutput
+  }
+
+}
+
+export const EMPTY_TECHDATE = (): TechDateType => ({
+  year: 0,
+  month: 0,
+  day: 0,
+})
+
+export const parseTechDateString= (s: string) : TechDateType => {
+  const found : {[key : string] : string | number } | undefined = s.match(dateParseRegex)?.groups
+  if(!dateParseRegex.test(s) || !found) throw new Error(`"${JSON.stringify(s)}" is not a date.`)
+
+  const output: TechDateType = EMPTY_TECHDATE()
+
+  for (const [k, v] of Object.entries(found)) {
+    output[k as keyof TechDateType] = parseInt(v as string)
+  }
+
+  return found as TechDateType
+}
+
+export const randInt = (max : number = 1, seed: number) =>{ 
+  const output = Math.trunc(seed.toString().split('').map(v=>v as unknown as number).reduce((p,c)=> p+c) % 17 / 16 * max)
+  return output
 }

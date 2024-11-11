@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Echo_des_Labos_20240331</title>
+  <style>
+html {
+color: #1a1a1a;
+background-color: #fdfdfd;
+}
+body {
+margin: 0 auto;
+max-width: 36em;
+padding-left: 50px;
+padding-right: 50px;
+padding-top: 50px;
+padding-bottom: 50px;
+hyphens: auto;
+overflow-wrap: break-word;
+text-rendering: optimizeLegibility;
+font-kerning: normal;
+}
+@media (max-width: 600px) {
+body {
+font-size: 0.9em;
+padding: 12px;
+}
+h1 {
+font-size: 1.8em;
+}
+}
+@media print {
+html {
+background-color: white;
+}
+body {
+background-color: transparent;
+color: black;
+font-size: 12pt;
+}
+p, h2, h3 {
+orphans: 3;
+widows: 3;
+}
+h2, h3, h4 {
+page-break-after: avoid;
+}
+}
+p {
+margin: 1em 0;
+}
+a {
+color: #1a1a1a;
+}
+a:visited {
+color: #1a1a1a;
+}
+img {
+max-width: 100%;
+}
+svg {
+height: auto;
+max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+margin-top: 1.4em;
+}
+h5, h6 {
+font-size: 1em;
+font-style: italic;
+}
+h6 {
+font-weight: normal;
+}
+ol, ul {
+padding-left: 1.7em;
+margin-top: 1em;
+}
+li > ol, li > ul {
+margin-top: 0;
+}
+blockquote {
+margin: 1em 0 1em 1.7em;
+padding-left: 1em;
+border-left: 2px solid #e6e6e6;
+color: #606060;
+}
+code {
+font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+font-size: 85%;
+margin: 0;
+hyphens: manual;
+}
+pre {
+margin: 1em 0;
+overflow: auto;
+}
+pre code {
+padding: 0;
+overflow: visible;
+overflow-wrap: normal;
+}
+.sourceCode {
+background-color: transparent;
+overflow: visible;
+}
+hr {
+background-color: #1a1a1a;
+border: none;
+height: 1px;
+margin: 1em 0;
+}
+table {
+margin: 1em 0;
+border-collapse: collapse;
+width: 100%;
+overflow-x: auto;
+display: block;
+font-variant-numeric: lining-nums tabular-nums;
+}
+table caption {
+margin-bottom: 0.75em;
+}
+tbody {
+margin-top: 0.5em;
+border-top: 1px solid #1a1a1a;
+border-bottom: 1px solid #1a1a1a;
+}
+th {
+border-top: 1px solid #1a1a1a;
+padding: 0.25em 0.5em 0.25em 0.5em;
+}
+td {
+padding: 0.125em 0.5em 0.25em 0.5em;
+}
+header {
+margin-bottom: 4em;
+text-align: center;
+}
+#TOC li {
+list-style: none;
+}
+#TOC ul {
+padding-left: 1.3em;
+}
+#TOC > ul {
+padding-left: 0;
+}
+#TOC a:not(:hover) {
+text-decoration: none;
+}
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+</head>
+<body>
+<p>Aujourd&#39;hui, c&#39;est dimanche. Vous êtes donc bien sur Radio Truffière,
+je suis le Dendrobate Doctor et nous sommes ensemble pour faire l&#39;état
+de la recherche sur l&#39;épidémie de Covid-19 et le reste.</p>
+<p>Si elle disparait, retrouvez la chronique sur le blog
+(https://www.the-dendrobate-doctor.fr/)</p>
+<p>Si vous aimez la chronique, vous pouvez nous soutenir sur
+KisskissBankbank
+(https://www.kisskissbankbank.com/fr/projects/the-dendrobate-doctor).</p>
+<p>Bienvenue à tous sur l&#39;Echo des Labos.</p>
+<p>***</p>
+<p>FAKE DE LA SEMAINE</p>
+<p>Il y a des raisons pour lesquelles on (c’est un « on » assez large,
+ça inclut moi, les chercheurs, les toubibs, les vulgarisateurs, les
+passionnés d’esprit critique, ma maman si vous la lancez sur le sujet…)
+s’en prend régulièrement aux méthodes de soin alternatives. La première,
+c’est parce qu’il n’y a généralement aucune méthode dedans, ni pour
+savoir si ça marche, ni pour expliquer comment c’est censé marcher (bon,
+soyons honnête, ça c’est surtout les méthodologistes fous comme moi que
+ça défrise). La deuxième (oui, on dit seconde que quand la liste
+s’arrête à deux, et la mienne est longue), c’est qu’il n’y a
+généralement pas de soin dedans non plus, au mieux du bien-être, mais ça
+s’arrête là et c’est donc dangereux si vous vous fiez à ça pour soigner,
+réellement, des trucs, bien réels (là, c’est plus les toubibs qui
+râlent, et les patients aussi, quand ils se rendent compte qu’ils se
+sont faits avoir). La troisième, c’est que la médecine alternative, ça
+n’existe pas. Il y a la médecine, qui incorpore petit à petit tout ce
+qui a fait ses preuves (vous trouvez plein de plantes ou de molécules
+tirées des plantes dans la médecine, vous trouvez des pansements à basse
+de poisson, des nettoyages des plaies à base d’asticots, des saignées
+aux sangsues et des cardiorégulateurs au venin de serpent, c’est dire si
+on y met TOUT ce qui marche) et il y a les alternatives mais pas les
+deux, croire le contraire expose les gens à ne pas être capables de
+faire des choix libres et éclairés pour leur santé au moment où ça
+devient critique (et quand il faut expliquer ça, c’est généralement les
+chercheurs et les vulgarisateurs qui s’arrachent les cheveux).</p>
+<p>Mais il y a une 4<sup>e</sup> raison dont on va parler aujourd’hui.
+Le fait que ce n’est pas parce que quelque chose est alternatif qu’il
+est sans risque direct pour la santé, et je parle pas juste ici du
+courant si vous mettez les doigts dans la prise. Pourtant il y a cette
+croyance tenace que « c’est naturel, c’est meilleur pour la santé » (la
+lave est très naturelle, les Islandais sont pas méga fans), variante
+« c’est des plantes, ça peut pas faire de mal » (n’importe qui ayant eu
+un chat et devant consulter les sites vétérinaires à chaque fois avant
+d’acheter des fleurs sait à quel point le végétal est le règne des
+poisons…). Et ce coup-ci, c’est le Japon qui est en train de s’en rendre
+compte d’une manière assez violente. Le ministère de la santé nippon
+enquête actuellement sur 4 décès et plus d’une centaine
+d’hospitalisations qui seraient liées à un complément alimentaire très
+populaire dans l’archipel, la levure de riz rouge.</p>
+<p>Premier problème : il s’agit d’un complément alimentaire, ce qui fait
+que, au Japon comme à peu près partout ailleurs dans le monde, c’est un
+truc vendu avec aucune étude d’efficacité obligatoire, et seulement des
+études de toxicité à court-terme nécessaires. En clair, si en prendre
+régulièrement pendant 5 ans ça bousille vos reins, personne le sait et
+ce sera vendu sans restriction au comptoir. Le fait est qu’il est, pour
+l’instant, impossible de savoir si le complément incriminé a été victime
+d’une contamination de certains lots, si certaines gélules/pilules
+étaient plus dosées que d’autres (oui, parce que autant un médicament,
+il y a une dose de molécule stricte par prise, autant pour un complément
+alimentaire, c’est dosé à l’à-peu-près) ou si c’est juste qu’il est
+toxique comme d’hab et qu’on avait pas fait le lien avant. « Mais si
+c’est toxique, on aurait dû quand même s’en apercevoir, non ? Il fait
+quoi ce truc ? » Et bien justement, ça fait plusieurs années qu’on
+suspecte la levure de riz rouge d’être toxique au point d’endommager des
+organes dont on a un peu besoin dans sa vie de tous les jours comme un
+foie, deux reins, trois raisons d’avoir une âme.</p>
+<p>Deuxième problème : personne ne veut faire de vraies études
+là-dessus. Les labos qui vendent les compléments alimentaires n’ont pas
+intérêt à en démontrer la toxicité, les labos qui vendent des
+médicaments concurrents passent tout leur budget dans le développement
+de leur produit à eux, les labos publics sont sous-financés. Donc on ne
+sait pas. Mais y a des gens sous dialyse là qui aimeraient bien qu’on se
+penche dessus…</p>
+<p>Et on arrive au troisième problème : pourquoi que tous ces gens là
+ont pris ce truc ? Parce qu’ils cherchaient une alternative aux
+statines. La levure de riz rouge est en effet présentée comme un
+anticholestérol naturel. Ce qu’il est. La levure de riz rouge EST une
+statine, en fait. Sauf que c’est une statine sans ordonnance, avec un
+dosage approximatif par pilule, en vente libre, sans obligation de
+posologie et avec zéro étude sur la toxicité à long-terme. Bayer ou
+Pfizer vous vendrait un truc comme ça, vous le prendriez, vous ? Bon.
+Alors pourquoi quand c’est Boiron ou (attendez je vérifie mes notes)
+Kobayashi Pharmaceutical, on trouve ça acceptable ? J’ai des
+questions !</p>
+<p>***</p>
+<p>DECOUVERTE DE LA SEMAINE</p>
+<p>Dans mon domaine de recherche, on est parfois amenés à se pencher sur
+les zoonoses, ces maladies que les animaux transmettent aux humains.
+Mais il est vrai qu’on se penche assez peu sur l’inverse : qu’est-ce que
+les humains transmettent aux autres animaux ? J’avais étudié quelques
+cas, rares mais passionnants (mais en même temps c’est mon domaine, je
+le trouve absolument passionnant, je peux vous en parler pendant des
+heures, faut jamais me lancer dessus à part à vos risques et périls), de
+maladies communes et échangées entre les communautés chimpanzées et les
+communautés humaines qui vivent en bord de leur territoire, les deux
+ayant une pharmacopée traditionnelle commune pour endiguer les accès de
+fièvre liés à la malaria. On savait donc que les deux espèces pouvaient
+tomber malades des mêmes pathologies, et on a été catastrophés mais
+guère surpris quand les épidémies d’Ebola des communautés humaines ont
+atteint les grands singes voisins.</p>
+<p>Mais il y a des collègues qui se sont livrés à une étude plus
+approfondie et complète de la question de la transmission interespèce,
+et leur constat (à lire ici
+https://www.nature.com/articles/s41559-024-02353-4) est sans appel : on
+contamine beaucoup plus les animaux que l’inverse. Lorsqu’un virus
+circule d’une espèce à une autre, dans près de deux tiers des cas, il va
+de nous à une autre espèce. Alors, est-ce que ça doit dire qu’il faut
+arrêter de craindre les contaminations animales et aller faire des
+câlins aux rats d’égout ? Non, on ne fait pas de câlins à une espèce qui
+ne cherche pas volontairement vos câlins, ça la stresse (comment ça je
+m’éloigne de mon propos ?). Mais plus globalement, l’idée est qu’il faut
+limiter nos contacts avec la faune sauvage (et genre arrêter de
+déforester partout, merci), pour notre bien, mais en fait, surtout, pour
+le leur.</p>
+<p>***</p>
+<p>PISTE DE LA SEMAINE</p>
+<p>*VIH : comment se débarrasser de cette saloperie de ses morts, si
+vous me passez l’expression ? On a essayé de le rendre plus visible pour
+le système immunitaire, on lui a envoyé tout notre arsenal chimique et
+biologique à la gueule, on a testé des vaccins dans tous les sens et il
+nous nargue encore, que faire ? Et bien souvent en recherche, c’est
+quand on est dans une impasse qu’on se dit qu’il faut peut-être regarder
+le problème sous un autre angle. Et si au lieu de chercher à agir sur
+lui, on cherchait à agir sur nous ? Des résultats préliminaires (donc,
+évidemment, on attendra des tests sur l’humain avant de crier victoire,
+mais on peut les lire là, à défaut d’aller au congrès où ils seront
+présentés le mois prochain
+https://www.newscientist.com/article/2423108-crispr-could-disable-and-cure-hiv-suggests-promising-lab-experiment/)
+montrent qu’il est possible d’éliminer toute trace du virus, même sous
+sa forme dormante en… modifiant notre génome. Plus précisément, celui du
+système immunitaire que le VIH prend pour cible. La thérapie est lourde,
+car elle implique d’abord une chimiothérapie pour détruire la moelle
+osseuse du patient, avant d’implanter des cellules génétiquement
+modifiées qui vont reconstruire une moelle osseuse puis un système
+immunitaire résistant au VIH. La thérapie génique serait donc réservée
+aux patients déjà atteints et stabilisés par la trithérapie. Ca reste
+plus simple d’avoir des capotes avec vous, si vous voulez mon très
+humble avis.</p>
+<p>***</p>
+<p>IMPASSE DE LA SEMAINE</p>
+<p>*Fluoroquinolones : sous ce nom barbare, se regroupe toute une
+famille d’antibiotiques assez vénères, qu’on utilise de fait pour
+combattre les infections résistantes. Enfin ça, c’est la théorie. La
+théorie, c’est que comme ils sont bien vénères, on les utilise quand il
+faut vraiment, genre quand l’otite a résisté à tout et que l’encéphalite
+commence à devenir une probabilité réelle. La pratique, c’est que comme
+ils sont bien vénères, on les prescrit comme ça on est sûr de filer un
+truc qui marche. Sauf que, comme ils sont toujours bien vénères, ils ont
+des effets indésirables eux aussi, bien vénères. Quand vous vous tapez
+des ruptures des tendons qui demandent 6 mois de rééducation pour éviter
+qu’une sale bactérie transforme votre cerveau en fromage blanc, c’est un
+risque acceptable. Quand vous vous retrouvez avec un trouble cardiaque à
+vie parce que votre toubib s’est dit que ça irait plus vite pour soigner
+une bête cystite, ça ne l’est pas. Et, du fait que de nombreux médecins
+en France ont juste ignoré les recommandations de l’ARS, le pôle santé
+publique du parquet de Paris vient d’ouvrir une enquête pour blessures
+involontaires et tromperie, dans plus d’une vingtaine de cas. Une goutte
+d’eau, si on estime, comme l’ANSM, qu’entre 2018 et 2023, six millions
+de patients ont reçu cette famille d’antibiotiques alors qu’il n’y avait
+pas de besoin réel. Il va donc y avoir des rappels à l’ordre et des
+sanctions massives contre les médecins négligents qui… ah ? Ah non,
+pardon, on me dit dans l’oreillette que c’est le Conseil de l’Ordre qui
+est en charge de faire appliquer ces recommandations, donc il se passera
+rien comme d’habitude, même s’il y a des morts. Vous pouvez reprendre
+une activité normale.</p>
+<p>***</p>
+<p>MAUVAISE NOUVELLE DE LA SEMAINE</p>
+<p>*Choléra : des cas de choléra importés ont été signalés à la Réunion
+et à Mayotte. Si le cas de la Réunion ne semble pas poser de problème
+(on rappelle que la maladie n’est pas contagieuse directement d’humain à
+humain), le cas de Mayotte est plus inquiétant, car l’île fait
+actuellement face à une pénurie d’eau (enfin je dis actuellement, mais
+ça fait des mois que ça dure, et tout le monde s’en cogne, on a un
+département entier en France où y a pas d’eau courante et ça semble
+émouvoir personne) et le risque d’ingestion d’une eau souillée par les
+contaminants humains est plus probable, d’autant plus que les Comores
+voisines souffrent de bien plus de cas de choléra, et que le risque de
+transmission est donc accru. Le seuil épidémique est encore bien loin,
+mais prudence tout de même si vous voyagez ou vivez dans ces deux
+îles.</p>
+<p>***</p>
+<p>BONNE NOUVELLE DE LA SEMAINE</p>
+<p>*REC : je serai, cette année encore, aux Rencontres de l’Esprit
+Critique, à Toulouse-Labège, les 27 et 28 avril (enfin, le 27, vous
+pourrez surtout me voir déambuler en touriste avec ma livrée rouge, mon
+modérateur, sa pelle). Le dimanche 28, je donnerai une conférence sur
+comment le système de publications scientifiques est en train de tuer la
+recherche (ou du moins les chercheurs, mais faut avouer que c’est un peu
+pareil), puis je participerai à une table ronde sur les controverses
+scientifiques avant d’animer une seconde table-ronde où les intervenants
+parleront des problèmes éthiques dans la recherche (oui, c’est l’année
+où je tire contre mon camp, on va dire). Vous pouvez dès maintenant
+prendre vos places (ici https://rec-toulouse.fr/), c’est gratuit mais
+chaque année, le REC parraine une association à qui vous pouvez verser
+un petit billet sur place à l’entrée, si vous le pouvez, faites-le c’est
+sympa.</p>
+<p>***</p>
+<p>« QU’EST-CE QUE PUTAIN DE QUOI ? »</p>
+<p>Ces derniers temps, Bolloré essaye de faire croire aux gens que les
+démons existent. Que ce soit par son magazine papier « 100 raisons de
+croire » (et, je suis sûre pas une de bonne, puisque la foi n’est pas
+censée avoir besoin de raison, y en a qui ont pas assez regardé
+Constantine…) ou par son émission sur CNews « En quête d’esprit » (et
+pas celui critique visiblement). Mais le sachiez-tu chère audience, il y
+a des gens qui voient pour de vrais des démons dans la vraie vie de tous
+les jours et qui n’ont aucun problème psychiatrique (enfin, au début,
+après, si tu vois des démons partout tous les jours de ta vie, tu finis
+peut-être par en avoir…). Ces gens souffrent en revanche d’un mal
+neurologique qui peut parfois s’installer en seulement quelques jours,
+sorti de nulle part, la prosopométamorphopsie (PMO). Le trouble fait que
+la personne atteinte voit les visages humains déformés, souvent avec des
+oreilles, une bouche et des arcades sourcilières démesurément étirées.
+Récemment, un cas a aidé à mieux comprendre ce que les patients voyaient
+exactement, car un patient (décrit dans l’étude de cas publiée ici
+https://www.thelancet.com/article/S0140-6736(24)00136-3/abstract?)
+atteint de PMO continuait à voir normalement les visages en deux
+dimensions, sur papier ou ordinateur, et a donc pu faire des exercices
+de comparaison pour montrer aux chercheurs ce qu’il voyait. Si des
+traumatismes du cortex visuel sont suspectés, la cause de la maladie est
+toujours inconnue, et il n’y a pas de traitement identifié à ce
+jour.</p>
+<p>***</p>
+<p>POINT METHODE DE LA SEMAINE : soit gentil, pas méchant, c’est pas
+gentil d’être méchant, c’est mieux d’être gentil</p>
+<p>Quelques-uns parmi vous ont eu à « discuter » cette semaine avec une
+personne qui a cru bon de venir chercher la bagarre dans les
+commentaires de la chronique. Et c’est très dommage. C’est dommage parce
+que, à l’origine, face à son premier commentaire qui disait que la
+psychologie n’était pas une science et ce que je faisais non plus, je me
+suis dit que c’était un très bon sujet pour un point méthode. Plutôt que
+de lui répondre sur le moment (d’autant que Facebook n’a toujours pas
+examiné mes appels sur mes précédents commentaires censurés…), je me
+suis dit que j’allais me servir de l’occasion pour donner des éléments
+sur « c’est quoi une science », « c’est quoi les caractéristiques d’une
+méthode scientifique » et « comment on sait si c’est de la science ou
+pas ». Ca promettait d’être très intéressant. Certains d’entre vous
+connaissent déjà les arguments de ce débat, et sont donc allés les
+exposer à la dame, parce que le débat d’idées, c’est une bonne chose. Et
+c’est là que c’est parti en banane (et si vous saviez comment j’ai
+HORREUR de la banane…). Donc, au lieu de parler de « c’est quoi la
+science », je vais faire un rappel sur « à quel moment c’est un débat et
+à quel moment c’est du moquage de figure ».</p>
+<p>1-Venez avec de vrais arguments : si vous êtes juste là pour insulter
+les gens, vous pouvez aller jouer ailleurs. Si quelqu’un vous insulte,
+ne répondez pas, vous valez mieux que ça. Alertez l’équipe de la page,
+et le modérateur se chargera d’apprendre au fâcheux les bonnes
+manières.</p>
+<p>2-Partez du principe que l’autre est de bonne foi : l’écriture
+numérique tend à faire disparaitre des marqueurs dans le discours (on
+appelle ça le perlocutoire du discours, si ça vous intéresse) qui
+désamorcent les conflits dans les discussions et de ce fait on s’énerve
+plus vite en ligne. Par défaut, partez du principe que la personne en
+face est de bonne foi et qu’elle est brusque, maladroite ou énervée, et
+donnez de vrais arguments posés. Si elle est vraiment là pour jouer au
+con, elle jouera contre le modérateur, il est très fort à ça.</p>
+<p>3-Vous n’êtes pas obligés de répondre : si en face c’est un mur, que
+la discussion tourne en rond et que c’est mauvais pour vos nerfs, vous
+n’êtes pas obligés de continuer. Préservez-vous. Si vous trouvez que la
+personne fait des reproches injustes, fallacieux ou diffamatoires à mon
+encontre, ne vous inquiétez pas, j’ai un modérateur et il a une pelle,
+vous pouvez laisser la discussion en plan, tout ira bien.</p>
+<p>4-C’est ok de ne pas savoir et de se tromper : ça m’est arrivé à
+moi-même sur cette page, et j’ai corrigé, amendé. N’ayez pas honte de
+reconnaître que vous avez été mal informé, que vous vous êtes trompé ou
+que vous avez lu trop vite, souvent ça suffit à apaiser les tensions et
+la conversation peut reprendre. En revanche si l’autre en face en
+profite pour vous enfoncer une fois que vous vous êtes excusé, vous
+pouvez appeler à l’aide, le modérateur viendra rappeler à l’excité en
+face de prendre ses gouttes et de parler correctement aux gens.</p>
+<p>5-Quoi qu’il arrive, on ne bloque pas le modérateur : sinon vous
+serez banni. Comme ça c’est dit.</p>
+<p>***</p>
+<p>En espérant avoir pu apporter un peu de lumière dans le chaos
+ambiant, je rends l&#39;antenne, et on y retourne pas la semaine prochaine,
+car je serai en déplacement mais il y aura sans doute du contenu un peu
+surprise lié audit déplacement, je vous en dit pas plus pour l’instant.
+En attendant, prenez soin de vous et des chercheurs qui bossent dur, et,
+aimez la science, la vraie, et ceux qui la font. Bisous.</p>
+</body>
+</html>
