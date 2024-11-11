@@ -1,8 +1,9 @@
 'use client'
 
-import axios, { AxiosResponse } from "axios";
-import { Dispatch, MutableRefObject, SetStateAction, useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
-import { compareTechDateString, EMPTY_TECHDATE, parseTechDateString, TechDateType } from "./utils";
+import { useCallback, useSyncExternalStore } from "react";
+import { compareTechDate, EMPTY_TECHDATE, parseTechDateString, TechDateType } from "./utils";
+
+import articleListingData from '../app/listing.json'
 
 export type ArticleListing = {
   first: TechDateType
@@ -13,47 +14,14 @@ export type ArticleListing = {
 export type ArticleDataState = 'loading' | 'done' | 'error' | 'empty'
 
 export const useArticles = () : [ArticleListing, ArticleDataState] => {
-  const [ state, setState ] = useState<'loading' | 'done' | 'error' | 'empty'>('empty')
-  const [ data, setData ] = useState<ArticleListing>({
-    first: EMPTY_TECHDATE(),
-    list: [],
-    last: EMPTY_TECHDATE(),
-  })
 
-  useEffect(() => {
+  const sortedData = articleListingData.map(parseTechDateString).sort((a,b) =>compareTechDate(a)(b))
 
-    const fetchArticles = async () => {
-      return await axios.get<string[]>(
-        '/articles/listing.json'
-      )
-    }
-
-    fetchArticles()
-      .then((data: AxiosResponse<string[], string>) => {
-        const sortedData = data.data.sort((a,b) =>compareTechDateString(a)(b)).map(parseTechDateString)
-
-        console.log(sortedData);
-        
-
-        setData({
-          first: sortedData[0],
-          list: sortedData,
-          last: sortedData.findLast(() => true) ?? EMPTY_TECHDATE()
-        })
-        setState('done')
-      })
-      .catch(() => {
-        setData({
-          first: EMPTY_TECHDATE(),
-          list: [],
-          last: EMPTY_TECHDATE(),
-        })
-        setState('error')
-      })
-
-  }, []);
-
-  return [ data, state ]
+  return [ {
+    first: sortedData[0],
+    list: sortedData,
+    last: sortedData.findLast(() => true) ?? EMPTY_TECHDATE()
+  }, 'done' ]
 }
 
 export const useMediaQuery = (query: string) => {

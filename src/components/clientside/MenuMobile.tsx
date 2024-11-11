@@ -2,8 +2,8 @@
 
 import { useArticlesData } from "@/lib/ArticlesContext";
 import { useMenuState } from "@/lib/MenuContext";
-import { techDateToHuman, techDateToValue, TechDateType } from "@/lib/utils";
-import { FC, MouseEventHandler } from "react";
+import { techDateToHuman, TechDateType } from "@/lib/utils";
+import { FC } from "react";
 
 export const MenuMobile: FC = () => {
   const articlesData = useArticlesData()
@@ -11,12 +11,12 @@ export const MenuMobile: FC = () => {
   const { isMenuOpen, toggleMenuOpen }= useMenuState()
   
   return (<>{isMenuOpen && (
-  <nav className="relative md:hidden backdrop-blur-md place-content-center text-center border-b-2 border-t-2 border-stone-50 -z-50 bg-gradient-to-b from-stone-200/60 to-stone-100/60  cursor-pointer">
-    <ul>
+  <nav className="relative md:hidden backdrop-blur-md place-content-center text-center border-b-2 border-t-2 border-stone-50 -z-50 cursor-pointer max-h-96 overflow-y-auto">
+    <ul className="bg-[repeating-linear-gradient(45deg,var(--tw-gradient-stops))] from-stone-600/50 from-[length:0_20px] to-stone-700/50 to-[length:20px_40px] py-2">
       {articlesData.list.map((entry: TechDateType, id: number) => (
         <li
           key={id}
-          className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+          className="p-10 bg-stone-300 hover:bg-gray-100 cursor-pointer mx-20 my-10 shadow-black shadow-lg"
           onClick={() => {
             setCurrentArticle(entry)
             toggleMenuOpen()

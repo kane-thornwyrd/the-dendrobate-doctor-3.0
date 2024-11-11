@@ -222,7 +222,7 @@ body {
 }
 
 #contact a:hover > * {
-  @apply animate-bounce;      
+  @apply animate-bounce;
 }
 
 .sticky-fluo-paper {
@@ -293,4 +293,25 @@ body {
     content: attr(href-readable);
   }
   
+}
+
+.article-body {
+  #TOC {
+    @apply bg-gradient-to-b from-stone-50/20 to-stone-100/20 rounded-md pb-4 shadow-lg shadow-stone-800/20;
+    ul {
+      @apply list-none;
+    }
+    li {
+      @apply p-2;
+    }
+  }
+  h1 {
+    @apply text-2xl my-3 text-green-900;
+  }
+
+  a {
+    @apply text-green-700;
+  }
+
+  @apply relative py-6 mx-auto prose prose-stone;
 }

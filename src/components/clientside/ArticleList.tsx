@@ -10,7 +10,7 @@ import {
 
 import { ArticleListing, useArticles } from "@/lib/client.utils"
 import { Loading } from "../serverside/Loading"
-import { techDateToHuman, techDateToValue } from "@/lib/utils"
+import { techDateToHuman, techDateToString } from "@/lib/utils"
 
 export const ArticleList = () => {
   const [ data, state ] = useArticles()
@@ -28,7 +28,7 @@ export const ArticleList = () => {
           </SelectTrigger>
           <SelectContent popover="">
             {(content.list.map((entry, id) => (
-              <SelectItem key={id} value={techDateToValue(entry)}>{techDateToHuman(entry)}</SelectItem>
+              <SelectItem key={id} value={techDateToString(entry)}>{techDateToHuman(entry)}</SelectItem>
             )))}
           </SelectContent>
         </Select>

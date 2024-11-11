@@ -15,9 +15,7 @@ const getShowFont : NextFontWithVariable = localFont({
   weight: "100 900",
 });
 
-const mainFont: NextFont = GFont({
-  subsets: ['latin']
-})
+const mainFont: NextFont = GFont({ weight: '400', subsets: ['latin-ext'] })
 
 const monoFont = MonoFont({
   subsets: ['latin']

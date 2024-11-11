@@ -1,6 +1,6 @@
 'use client'
 
-import {createContext, Dispatch, FC, PropsWithChildren, SetStateAction, useContext, useState} from "react"
+import {createContext, FC, PropsWithChildren, useContext, useState} from "react"
 import { MenuToggle } from "@/components/clientside/MenuToggle"
 
 type MenuContextType = {
@@ -24,8 +24,8 @@ export const MenuProvider: FC<PropsWithChildren> = ({children}) => {
 }
 
 export const MenuButton: FC<Record<string, never>> = () => {
-  const {isMenuOpen, toggleMenuOpen} = useContext(MenuContext)
-  return (<MenuToggle toggleOpen={() => toggleMenuOpen()} />)
+  const { toggleMenuOpen } = useContext(MenuContext)
+  return (<MenuToggle toggleMenuOpen={toggleMenuOpen} />)
 }
 
 

@@ -1,0 +1,311 @@
+
+
+import '@/app/globals.css'
+export default function ArticleContent() { return (<>
+  
+
+
+
+<p>Aujourd&#39;hui, c&#39;est dimanche. Vous êtes donc bien sur Radio
+Monbazillac, je suis le Dendrobate Doctor et nous sommes ensemble pour
+faire l&#39;état de la recherche sur l&#39;épidémie de Covid-19 et le reste.</p>
+<p>Si elle disparait, retrouvez la chronique sur le blog
+(https://www.the-dendrobate-doctor.fr/)</p>
+<p>Si vous aimez la chronique, vous pouvez nous soutenir sur
+KisskissBankbank
+(https://www.kisskissbankbank.com/fr/projects/the-dendrobate-doctor).</p>
+<p>Bienvenue à tous sur l&#39;Echo des Labos.</p>
+<hr className="my-8" />
+<p>FAKE DE LA SEMAINE</p>
+<p>Cette semaine je suis tombée sur un Fake d’un tel niveau que j’avoue
+que j’ai eu du mal à y croire (et on est pas sur une obscure publi de
+Paul-Régis dans son coin, il a fallu que l’ambassade du Japon en France,
+qui n’avait AUCUNE idée de qu’est-ce que c’était encore que ces
+histoires, fasse un démenti auprès de journalistes). Si je vous dis :
+Japon, virus, robot ultra-technologiques, vous me dites ? Tous ceux qui
+ont répondu « l’arc du Marionnettiste dans Ghost in the Shell » ont le
+droit d’aller se prendre un dorayaki, mais pour les autres, on va devoir
+parler de la rumeur incroyable comme quoi le Japon vient de placer tout
+le pays en état d’urgence suite à la découverte de nanorobots dans le
+sang de 96 millions de personnes vaccinées (avec LE vaccin toujours, on
+dit même plus vaccinées contre quoi à force).</p>
+<p>L’origine de cette rumeur folle est ce « papier » (là, si vous êtes
+maso
+https://www.researchgate.net/publication/382358701_Real-Time_Self-Assembly_of_Stereomicroscopically_Visible_Artificial_Constructions_in_Incubated_Specimens_of_mRNA_Products_Mainly_from_Pfizer_and_Moderna_A_Comprehensive_Longitudinal_Study),
+publié dans une revue qui se prétend spécialiste des vaccins mais qui
+est fondée et éditée par un linguiste et un ophtalmo convaincu que les
+vaccins donnent l’autisme (quoi que cela veuille dire). Donc bon, voilà.
+Les auteurs du « papier » sont une gynécologue coréenne et un prof de
+linguistique appliquée à l’université chrétienne d’Okinawa. Donc bon.
+Voilà. Et les gars, ils ont vu des nanorobots dans un stéréomicroscope
+en grossissant 400 fois, alors que l’échelle nanométrique n’est pas
+atteinte sur ce type d’appareil avant un grossissement de 1300… Donc,
+BON, voilà.</p>
+<p>Si le Japon n’a rien de plus à ajouter sur ce sujet qui n’en est pas
+un, il est toutefois effectivement, à l’heure où j’écris ces lignes, en
+état d’alerte. Cela n’a rien à voir avec un vaccin, ni même avec une
+épidémie, mais avec son risque sismique. En effet, depuis plusieurs
+années, le Japon surveille de près la fosse de Nankai, une zone de
+subduction des plaques tectoniques, le méga-chevauchement de Nankai. La
+zone déclenche des méga-séismes, c’est-à-dire d’une magnitude supérieure
+à 8.5 sur l’échelle de Richter, de manière périodique entre 90 et 200
+ans. Un déclenchement de la faille mettrait en grave danger les villes
+de Tokyo, Yokohama et Osaka, menaçant directement plus de 45 millions
+d’habitants en l’espace de quelques minutes. La zone est donc sous haute
+surveillance, et, il y a une semaine, un tremblement de terre en
+particulier a fait 240 morts et a coché les cases d’un évènement
+précurseur d’un méga-séisme. Le Japon est donc en état d’alerte, et en
+sortira dans les jours à venir si la faille ne montre pas d’autres
+signes inquiétants. Et deux illuminés qui publient un papier digne d’un
+mauvais shonen, ça n’est pas un signe réellement inquiétant.</p>
+<hr className="my-8" />
+<p>DECOUVERTE DE LA SEMAINE</p>
+<p>Aujourd’hui, je vais vous parler d’une découverte intéressante pas
+seulement en elle-même, mais aussi pour les questions méthodologiques
+qu’elle soulève (et on les examinera dans le Point méthode de la
+semaine). Le communiqué émane de l’Imperial College, qui a supervisé
+l’étude (à lire là
+https://www.imperial.ac.uk/news/254738/being-night-associated-with-mental-sharpness/)
+et dit, très rapidement, que les couche-tard sont en moyenne légèrement
+plus intelligents que les lève-tôt. Très rapidement. Trop rapidement en
+vrai, donc on va creuser.</p>
+<p>Bon déjà on est sur une étude qui se donne les moyens : 26.000 sujets
+étudiés, des bases de données tenant compte de nombreux facteurs
+confondants, plusieurs tests cognitifs différents. Ensuite, on est sur
+un résultat, certes, significatif (trop significatif pour être un simple
+artefact statistique), mais on parle en réalité plus de « performance
+cognitive » que d’intelligence, puisqu’il n’était pas question ici de
+mesurer le QI mais bien de tester des capacités à résoudre des tests.
+Deux groupes de tests ont été proposés, et les sujets étaient répartis
+comme étant « du soir », « du matin » ou « intermédiaire » selon leurs
+réponses sur leurs habitudes de vie, les moments de la journée où ils se
+sentaient le plus alertes et leur rythme normal de sommeil. Dans le
+premier groupe, les « du soir » ont obtenu des scores supérieurs à 13.5%
+à ceux des « du matin » (les « intermédiaires » n’étaient supérieurs
+« que » de 10%) et dans le second groupe, les « du soir »
+surperformaient à 7.5% sur les « du matin (contre « seulement » 6.3%
+pour les « intermédiaires »). Ces résultats-là ne sont pas bruts, ils
+ont pris en compte et ajusté l’âge, le sexe, le tabagisme, la
+consommation d’alcool, et les maladies chroniques. Sans surprise, être
+jeune avec un mode de vie sain se traduisait par une meilleure
+performance qu’être âgé, avec une mauvaise hygiène de vie ou une maladie
+chronique, mais ça, ça ne surprend personne.</p>
+<p>En revanche, l’idée que les couche-tard performent plus que les
+lève-tôt bat en brèche une idée reçue et une croyance populaire et c’est
+donc ça qui attire l’attention sur cette étude. Pour que les résultats
+soient consolidés, il va falloir encore investiguer quelques facteurs
+confondants (on en reparle plus bas), mais ils ont déjà le mérite de
+nous confronter à nos croyances, à notre « bon sens » qui n’est pas si
+souvent fondé qu’on le croit. Autre résultat inattendu de l’étude, et
+qui devra être investigué : si les gens qui dormaient trop peu ont
+sous-performé, les insomniaques diagnostiqués n’ont pas montré de baisse
+de performance par rapport à la note moyenne de leur groupe, indiquant
+que le manque de sommeil et l’insomnie, bien qu’on ait tendance à les
+assimiler, auraient en réalité des effets complètement différents sur
+les capacités du cerveau.</p>
+<hr className="my-8" />
+<p>PISTE DE LA SEMAINE</p>
+<p>*Marée noire : la pollution aux hydrocarbures est une des grandes
+plaies des écosystèmes. Une équipe mixte israélienne et chinoise a mis
+au point un procédé révolutionnaire pour en venir à bout, à base de…
+liège et de lasers. Oui, je sais, ça fait bizarre comme ça, mais restez
+jusqu’au bout. Le processus est complexe (mais à lire ici si vraiment
+vous y tenez
+https://pubs.aip.org/aip/apl/article-abstract/124/17/171601/3284350/Femtosecond-laser-structured-black?redirectedFrom=PDF),
+donc je vais vous faire la version accessible. Le liège peut absorber le
+pétrole. Quand le pétrole est épais et visqueux (comme quand il est
+refroidi par genre de l’eau de mer ou épaissi mélangé à du sable), ce
+processus d’absorption est long sa grand-mère et donc c’est pas un truc
+efficace. Quand on grave le liège au laser, il s’assombrit, prouvant
+qu’il est photothermique, c’est-à-dire qu’il convertit la lumière en
+chaleur. Quand on le grave au laser de manière particulière, on crée des
+microcavités qui retiennent encore plus la chaleur s’il est exposé au
+soleil. Quand il se réchauffe, il liquéfie le pétrole trop visqueux en
+surface et peut l’absorber efficacement. Quand il commence à l’absorber,
+il noircit, capte encore plus la lumière, chauffe encore plus et
+continue à pouvoir absorber le pétrole jusqu’à saturation. En plus, le
+liège flotte, même chargé de pétrole, et peut donc être posé sur la mer
+sans plus de dispositif. Le liège est l’écorce d’un arbre, et elle met
+10 ans à repousser une fois prélevée, ce qui en fait le premier matériau
+de dépollution renouvelable. Des tests en conditions réelles et à grande
+échelle doivent être lancés pour estimer mieux la faisabilité de la
+méthode, notamment la gestion des vagues, la dérive liée au vent et la
+facilité de pose et dépose.</p>
+<hr className="my-8" />
+<p>IMPASSE DE LA SEMAINE</p>
+<p>*IA en science : l’IA apporte énormément à la science, elle est une
+aide précieuse pour les chercheurs, les ingénieurs, les médecins et
+beaucoup de recherches avanceraient terriblement plus lentement sans
+elle. Mais comme toujours, la science étant ce qu’elle est c’est-à-dire
+amorale, une grande avancée est forcément aussi utilisée pour nuire.
+Dans le cas qui nous intéresse, c’est l’augmentation préoccupante du
+rôle de l’IA dans les cas de fraude scientifique, soit pour inventer de
+toutes pièces des images d’analyses, soit pour créer des illustrations
+complètement farfelues (vous vous souvenez du rat avec le pénis géant ?
+parce que moi oui, en fait, malheureusement), soit pour rédiger des
+parties entières d’articles. Et ceci n’est pas acceptable. Bien sûr, les
+outils sont faits pour être utilisés, et je n’ai personnellement (même
+si c’est un débat qui reste ouvert) pas d’objection à l’usage de
+Grammarly ou ChatGPT pour corriger, améliorer ou fluidifier la forme
+d’un article, d’autant plus que cela permettrait de compenser un peu le
+désavantage dont souffrent les chercheurs non-anglophones par rapport
+aux natifs quand tout le monde doit publier en anglais. Mais ne pas
+écrire son article ou inventer des données, ça n’est pas admissible, et
+plus grave, nous sommes mal équipés pour arriver à détecter les fraudes
+de ce type. Des solutions existent (je vous renvoie aux interviews de la
+grande Elizabeth Bik par Pete Judo là
+https://youtu.be/GeAPtIdb4Qs?si=7VCTRfbapBRKLobK ou de Lonni Besançon et
+Solal Pirelli par La Tronche en Biais là
+https://youtu.be/QZOjBa20ER0?si=Z22UQBdGvMr5Xpxn), mais avant tout il va
+falloir s’attaquer à la racine du mal, à savoir arrêter de juger les
+chercheurs sur la quantité de leur production plutôt que sur la qualité
+de leur travail. Oui, ça va demander au management de la recherche de
+réfléchir et de connaître le sujet, désolée.</p>
+<hr className="my-8" />
+<p>MAUVAISE NOUVELLE DE LA SEMAINE</p>
+<p>*Justice : le temps de la justice est long, et parfois, il l’est
+inutilement. A une époque où on commence à être bien au courant des
+risques encourus par les vulgarisateurs, les débunkers, les lanceurs
+d’alerte, les journalistes, on pourrait penser que la justice serait
+sensibilisée au problème des procédures-bâillon et de l’intimidation
+judiciaire. Mais il semblerait que non. Mendax de la Tronche en Biais se
+retrouve devant le tribunal correctionnel de Perpignan (on attend
+toujours le gros coup de filet de l’affaire lancée par Aberkane au
+passage), mis en examen au côté de deux journalistes (et je vais revenir
+sur le cas des journalistes plus en détail dans la section Qu’est-ce que
+putain de quoi, parce que ça me fume cette histoire) pour avoir dit à
+une dame qui s’imagine que les ondes électromagnétiques vous font fondre
+les neurones et pousser des cancers que son travail était tout pourri,
+ainsi que pour avoir raconté publiquement que, lors d’une précédente
+affaire (oui, parce que ça fait deux fois qu’elle y revient la dame), la
+juge avait demandé une expertise psychiatrique qui n’avait pas été
+effectuée. Un truc qui est écrit dans le compte-rendu de ladite juge,
+hein. Bref, c’est lunaire (et vous pouvez aller regarder là
+https://youtu.be/SDUfSSC9uB4?si=E5pWw8IOo6AFLecL à quel point c’est
+lunaire), et ça serait franchement drôle si ce n’était pas une manière
+d’intimider les vulgarisateurs, une tentative de créer un précédent
+dangereux pour la liberté de la presse, et une preuve patente que la
+justice, en étant déjà débordée, se laisse parfois déborder toute seule,
+de son plein gré.</p>
+<hr className="my-8" />
+<p>BONNE NOUVELLE DE LA SEMAINE</p>
+<p>*Mort annoncée : alors, a priori, on devait tous mourir suite à la
+cérémonie d’ouverture des JO, et c’est pas arrivé. Et puis, par un
+mécanisme que j’ai pas super bien compris je vous avoue, tous les
+« vaccinés » (pas ceux contre le tétanos encore une fois je suppose)
+devaient voir leurs vaccins « activés » (quoi que ça veuille dire)
+pendant la cérémonie de clôture, et on devait tous êtres morts à
+nouveau. Et ce n’est manifestement pas arrivé non plus. Bon.
+Champagne ?</p>
+<hr className="my-8" />
+<p>« QU’EST-CE QUE PUTAIN DE QUOI ? »</p>
+<p>Est-ce que le harcèlement des journalistes est une bonne chose ? Non,
+je sais pas, je pose la question, vu que ça a l’air de devenir une mode,
+moi j’étais restée sur l’idée que ça se faisait pas, mais manifestement,
+quelque chose m’a échappé. Entre l’affaire de la Tronche en Biais versus
+Annie Lobé, où, aujourd’hui, en France, en 2024, deux journalistes se
+retrouvent en correctionnel, devant payer des avocats pour se défendre,
+face à une personne qui n’est pas solvable et donc ne rentreront jamais
+dans leur frais, pour simplement avoir fait leur travail et avoir
+rapporté des propos s’étant tenus lors d’une audience de justice (ainsi
+qu’avoir refusé de diffusé un droit de réponse, mais comme la dame en
+question est spécialiste de produire des droits de réponse qui ne
+respectent pas la réglementation, comme vous pouvez vous en rendre
+compte là https://youtu.be/OPnYmU0Zbdg?si=dOa4el2iD96eRg9G, on ne peut
+pas vraiment leur reprocher non plus), et le fait que depuis le numéro
+spécial de l’Express sur leur « discipline », les psychanalystes se
+sentent plus pisser, ça devient risqué d’avoir une carte de presse.</p>
+<p>Disons-le tout net, on a le droit de ne pas être d’accord avec des
+journalistes, la manière dont ils traitent leur sujet, l’angle qu’ils
+adoptent. On a le droit de trouver qu’ils ont mal fait leur travail sur
+un sujet, on a même le droit de trouver qu’ils sont partisans,
+influencés, aux ordres voire corrompus (typiquement, la manière dont
+certains journalistes du Monde traitent de l’anthroposophie et tout ce
+qui s’y rapporte me fait dire qu’il y a des accointances mal venues, et
+ce sont des propos que je suis prête à assumer et démontrer). Mais
+lorsqu’on affirme une chose pareille, il faut le démontrer. Lorsqu’on a
+la flemme (ou pas les arguments) de la démonstration, on n’a pas le
+droit de les insulter, de les harceler (oui, quand tu vas copier-coller
+le même message diffamant sous des dizaines de posts des gens, c’est du
+harcèlement, quand tu vas commenter toutes les publications du compte,
+en produisant des dizaines de messages en réponse à un seul commentaire,
+c’est du harcèlement, et en plus c’est en public, on te voit faire mec),
+de s’en prendre à eux personnellement plutôt qu’à leur travail, ou
+encore de les menacer de harcèlement massif sur les réseaux sociaux si
+jamais ils ne se plient pas à nos désirs et refusent de rétropédaler.
+Donc ça, genre, c’est non, en fait (et si vous pensez que j’exagère,
+vous pouvez avoir un aperçu de l’ampleur du machin via cet article
+https://www.lexpress.fr/sciences-sante/sciences/caroline-goldman-parents-medecins-le-dossier-de-lexpress-sur-la-psychanalyse-fait-reagir-HAHUBW64TFG6HHGB26Y4YG32AQ
+que l’Express publie justement pour parler de ce que ses journalistes
+subissent… et vu qu’ils citent directement les noms de ces personnes
+extrêmement mesurées et pas du tout prêtes à leur faire un procès si
+elles le peuvent, vous pouvez croire qu’ils ont des preuves en béton
+armé de ce qu’ils avancent).</p>
+<p>En 2020, les journalistes titraient « 2020 en France, les
+scientifiques sont-ils en danger ? », et j’ai l’impression qu’il est
+temps pour moi de rendre un peu la pareille. Nous sommes en 2024, en
+France, les journalistes, les vrais, ceux qui investiguent et dénoncent,
+sont-ils en danger ?</p>
+<hr className="my-8" />
+<p>POINT METHODE DE LA SEMAINE – les facteurs confondants</p>
+<p>Comment être sûrs qu’on a pris en compte tous les facteurs
+confondants dans une étude ? Et bien, on est jamais sûr de rien, mais on
+peut essayer. Dans l’étude qui nous occupe, les chercheurs ont déjà
+exclu des facteurs importants comme l’âge, le sexe, l’état de santé, la
+consommation de toxiques et la durée générale du sommeil. C’est déjà
+bien, parce que en vrai, si un facteur confondant existe, on se serait
+attendu à le trouver dans cette liste. Bon, il n’y est pas, alors
+qu’est-ce qu’on fait ? On va en chercher des plus subtils, mais qui
+soient pertinents.</p>
+<p>Par exemple, la catégorie professionnelle n’a pas vraiment été
+évaluée, mais elle est ici un mauvais candidat : admettons qu’être « du
+matin » ou « du soir » change effectivement nos capacités cognitives, ça
+va aussi influencer nos choix de carrière, donc il sera impossible de
+savoir qui de l’œuf ou de la poule dans cette histoire.</p>
+<p>En revanche, si on admet que les gens sont bel et bien « du soir » ou
+« du matin », qu’on nait avec son chronotype et qu’on est câblé comme
+ça, peu importe les efforts qu’on fait et de à quelle heure la société a
+besoin qu’on soit efficace, alors il y a un paramètre qui devient
+intéressant : à quelle heure a-t-on testé les sujets ? Si les sujets
+« du soir » sont véritablement, peu importe l’heure à laquelle ils se
+couchent et ce qu’ils ont mangé la veille, des loques au réveil mais des
+bolides en milieu d’après-midi, alors des tests réalisés à ce moment-là
+les avantagent, ils sont à leur pic d’éveil. A l’inverse, les gens « du
+matin » auront, peu importe comment ils se sont préservés dans la
+matinée pour cette épreuve de l’après-midi, passé leur pic de
+performance.</p>
+<p>Il peut aussi peser dans la balance le fait que notre vie sociale se
+décale de plus en plus et qu’on vit beaucoup le soir. Les gens « du
+soir » n’ont pas de problème à garder le rythme, ils se contentent
+d’être des zombies le matin dans le métro, là où les gens « du matin »
+s’épuisent à aller contre leur chronotype et sous-performent
+ensuite.</p>
+<p>On peut imaginer plein d’hypothèses, mais c’est uniquement lorsque
+toutes celles liées aux facteurs confondants auront été écartées qu’on
+pourra commencer à se dire « ok, les couche-tard ont de meilleures
+performances cognitives en moyenne que les lève-tôt, pourquoi ? » et
+commencer à étudier les hypothèses qui répondent à cette question-là.
+Peut-être que Homo sapiens a des profils de travail différents, comme il
+a des profils de sommeil différents (c’est un sujet passionnant mais on
+va pas traiter ça aujourd’hui, retenez juste qu’il existe des profils de
+gens qui dorment plus ou moins longuement et plus ou moins profondément
+et on peut les expliquer en biologie évolutive : les veilleurs qui
+dorment très peu, etc.), et qu’il y a ceux qui travaillent de leurs
+mains le matin lorsque le jour est jeune et ceux qui travaillent avec
+leur tête le soir à la lumière du feu. Peut-être que la régulation du
+sommeil et le développement cognitif sont liés par une hormone, une
+glande, une structure cérébrale commune. Peut-être que, mais plus tard.
+Pour l’instant, on a du travail sur les facteurs confondants, et c’est
+déjà du boulot pour un moment.</p>
+<hr className="my-8" />
+<p>En espérant avoir pu apporter un peu de lumière dans le chaos
+ambiant, je rends l&#39;antenne, et on y retourne la semaine prochaine, car
+l&#39;épidémie ne se termine pas avec la montée en alerte de l’OMS, c’est
+même l’inverse, en fait, si vous avez suivi. En attendant, prenez soin
+de vous et des chercheurs qui bossent dur, et, aimez la science, la
+vraie, et ceux qui la font. Bisous.</p>
+
+
+
+</>)}
+  

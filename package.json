@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:articles": "node --import @swc-node/register/esm-register convert-articles.ts",
     "start": "next start",
     "lint": "next lint"
   },
@@ -12,6 +13,7 @@
     "@headlessui/react": "2.2.0",
     "@radix-ui/react-icons": "1.3.1",
     "@radix-ui/react-select": "2.1.2",
+    "@tailwindcss/typography": "0.5.15",
     "@tsparticles/all": "3.5.0",
     "@tsparticles/engine": "3.5.0",
     "@tsparticles/react": "3.0.0",
@@ -28,6 +30,9 @@
     "tailwindcss-animate": "1.0.7"
   },
   "devDependencies": {
+    "@swc-node/register": "1.10.9",
+    "@swc/cli": "0.5.0",
+    "@swc/core": "1.9.2",
     "@types/node": "22.8.7",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",

@@ -33,7 +33,7 @@ export const techDateToHuman = ({ year, month, day }: TechDateType): string => {
   return `${day} ${MONTHS[month]} ${year}`
 }
 
-export const techDateToValue  = ({ year, month, day } : TechDateType) => `${year}${month}${day}`
+export const techDateToString  = ({ year, month, day } : TechDateType) => `${year.toString().padStart(4, '0')}${month.toString().padStart(2, '0')}${day.toString().padStart(2, '0')}`
 
 type compOutput = -1 | 0 | 1
 
@@ -78,7 +78,7 @@ export const parseTechDateString= (s: string) : TechDateType => {
     output[k as keyof TechDateType] = parseInt(v as string)
   }
 
-  return found as TechDateType
+  return output
 }
 
 export const randInt = (max : number = 1, seed: number) =>{ 
