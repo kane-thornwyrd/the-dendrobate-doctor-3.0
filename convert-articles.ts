@@ -1,10 +1,15 @@
+import { writeFileSync } from "fs"
 import { readdir, readFile, writeFile } from "fs/promises"
 import { join as pathJoin } from 'node:path'
 
 const SOURCE = './src/articles/input'
 const DESTINATION = './src/articles/output'
 
+const listing: string[] = []
+
 await Promise.allSettled((await readdir(SOURCE)).map(async filename => {
+
+  listing.push(filename)
 
   try {
 
@@ -36,4 +41,6 @@ export default function ArticleContent() { return (<>
   } catch(e) {
     console.warn(e)
   }
-}))
+})).then(() => {
+  writeFileSync('src/app/listing.json', JSON.stringify(listing, null, 2))
+})
