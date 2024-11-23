@@ -22,7 +22,8 @@ await Promise.allSettled((await readdir(SOURCE)).map(async filename => {
     .replace(/<\/?body>/ig, '')
     .replace(/<p>\*\*\*<\/p>/ig, '<hr className="my-8" />')
     .replace(/style="[a-z0-9;:\.@_-]+"/ig, '')
-    .replace(/<img ([^>]+)\/>/ig, '<Image width={900} height={900} alt="" $1/>')
+    .replace(/<img(.*)alt=(['"])([^'"]*)\2\s([^>]*)\/>/gmi, '<Image alt="$3" width={900} height={900}$1$4/>')
+    .replace(/(<img(?!.*?alt=(['"]).*?\2)[^>]*)(\/>)/gmi, '$1alt="" $3')
 
   const hasImage = /<Image/i.test(content)
 
