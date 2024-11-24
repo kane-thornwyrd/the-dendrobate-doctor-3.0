@@ -9,7 +9,7 @@ import { Menu } from '../clientside/Menu'
 
 export const Header = () => {
   return (
-    <header id="top" className="relative md:fixed w-full z-10 bg-transparent print:container print:mx-auto print:shadow-none print:relative print:mb-6">
+    <header id="top" className="relative w-full z-10 bg-transparent print:container print:mx-auto print:shadow-none print:relative print:mb-6">
       <div className="container backdrop-blur-sm max-w-6xl mx-auto px-6 flex justify-between items-center print:p-0 print:justify-normal bg-gradient-to-b from-stone-50/70 to-stone-100/20 shadow-xl shadow-black/40 print:bg-none print:shadow-none">
         <h1 className={`relative overflow-hidden px-24 pr-24 -left-6 leading-relaxed font-extralight text-stone-50 text-6xl print:me-4 pt-3 ${Fonts.title.className}`} style={{textShadow : `0 0 7px #dc2626,
     0 0 10px #450a0a,

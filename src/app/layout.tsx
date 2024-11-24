@@ -42,8 +42,8 @@ export default function RootLayout({
         <MenuProvider>
         <ArticlesProvider>
           <Header />
-          <div className={`relative md:pt-28 md:bg-transparent print:bg-white ${Fonts.main.className}`}>
-            <main className="max-w-6xl px-4 mx-auto backdrop-blur-sm bg-stone-200/90  print:pt-0">
+          <div className={`relative md:bg-transparent print:bg-white ${Fonts.main.className}`}>
+            <main className="max-w-6xl md:px-4 mx-auto backdrop-blur-sm bg-stone-200/20  print:pt-0">
               {children}
 
               <ArrowScrollUp />

@@ -307,11 +307,45 @@ body {
   }
   h1 {
     @apply text-2xl my-3 text-green-900;
+
+    &:focus {
+      color:#f00
+    }
+  }
+
+  h2.text-right {
+    font-family: 'getShowFont';
+    font-size: 3rem;
+    margin: 0;
+    @apply text-green-900;
   }
 
   a {
     @apply text-green-700;
   }
 
-  @apply relative py-6 mx-auto prose prose-stone;
+  @apply relative mx-auto prose prose-stone bg-stone-200 p-10;
+  max-width: 112ch !important;
+}
+
+.article-body :where(hr):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  @apply border-green-800 my-2 border-2;
+}
+
+.labeled-image {
+  display: flex;
+  
+  margin: 0 auto;
+  align-items: center;
+  align-content: space-between;
+  justify-content: space-between;
+
+  @media (min-width: 768px) {
+    max-width: 50%;
+  }
+  img {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+  }
 }
