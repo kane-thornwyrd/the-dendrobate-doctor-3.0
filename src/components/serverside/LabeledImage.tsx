@@ -1,6 +1,6 @@
 import { FC, HTMLProps, PropsWithChildren } from "react"
 
-export const LabeledImage: FC<HTMLProps<HTMLImageElement> & PropsWithChildren & { hrefReadable?: string }> = ({ hrefReadable, children, className, ...props}) => {
+export const LabeledImage: FC<HTMLProps<HTMLImageElement> & PropsWithChildren & { hrefReadable?: string }> = ({...props}) => {
   return (
   <figure className='labeled-image aspect-square max-w-full bg-stone-900 m-0 p-0 relative border-8 border-stone-100 shadow-lg shadow-stone-800/20'>
     <img {...props} />

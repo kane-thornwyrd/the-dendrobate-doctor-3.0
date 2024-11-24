@@ -299,7 +299,7 @@ body {
   #TOC {
     @apply bg-gradient-to-b from-stone-50/20 to-stone-100/20 rounded-md pb-4 shadow-lg shadow-stone-800/20;
     ul {
-      @apply list-none;
+      list-style-type: none !important;
     }
     li {
       @apply p-2;
@@ -307,10 +307,6 @@ body {
   }
   h1 {
     @apply text-2xl my-3 text-green-900;
-
-    &:focus {
-      color:#f00
-    }
   }
 
   h2.text-right {
