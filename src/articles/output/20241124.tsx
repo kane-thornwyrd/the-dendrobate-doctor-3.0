@@ -9,7 +9,7 @@ export default function ArticleContent() { return (<>
 
 <nav id="TOC" role="doc-toc">
 <ul>
-<li><a href="#fake-de-la-semaine" id="toc-fake-de-la-semaine">
+<li><a href="#fake-de-la-semaine" id="toc-fake-de-la-semaine"><br />
 FAKE DE LA SEMAINE</a></li>
 <li><a href="#découverte-de-la-semaine" id="toc-découverte-de-la-semaine">DÉCOUVERTE DE LA SEMAINE</a></li>
 <li><a href="#piste-de-la-semaine" id="toc-piste-de-la-semaine">PISTE DE
