@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "build:articles": "node --import @swc-node/register/esm-register convert-articles.ts && \\ls src/articles/input | jq -R -s -c 'split(\"\n\")[:-1]' > src/app/listing.json",
+    "build:all": "npm run build:articles && npm run build",
     "start": "next start",
     "lint": "next lint"
   },
