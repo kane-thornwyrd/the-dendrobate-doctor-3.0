@@ -149,29 +149,31 @@ la journée (sauf que personne a jamais accusé Canon ou HP d’être à
 l’origine de fusillades dans les écoles).</p>
 <hr className="my-8" />
 <h1 id="piste-de-la-semaine">PISTE DE LA SEMAINE</h1>
-<p>*Effet Nocebo : en revanche, regarder TikTok (ou autre format très
-rapide, qui vous permet de consommer beaucoup de contenu en très peu de
-temps) peut vous rendre réellement malade. Plus précisément, lorsque
-vous regardez des contenus liés à un problème de santé (que ce soit une
-pathologie ou la pollution de l’air), l’algorithme va se mettre à vous
-en proposer beaucoup. Or, face à la sensation de danger, votre corps va
-se mettre à produire en masse de la cholécystokinine, une substance qui
-amplifie la douleur « quoi ? mais c’est complètement con ! » Pas du
-tout : face à un danger ou une épidémie, il s’agit d’un mécanisme
-évolutif qui nous pousse à être à l’écoute du moindre symptôme, pour
-pouvoir agir plus vite et augmenter les chances de survie. Ainsi, face à
-un danger similaire (par exemple, le fait de développer des maux de tête
-en haute altitude) 52% des personnes non-averties développeront des
-symptômes contre 86% de celles qui ont été prévenues. Ce décalage
-s’appelle l’effet Nocebo. La grande chef de file actuelle du domaine,
-l’Australienne <a href="https://www.unsw.edu.au/staff/kate-faasse">Kate
-Faasse</a> (https://www.unsw.edu.au/staff/kate-faasse), explique ainsi
-que, qui plus est, plus une personne avait entendu parler du risque,
-plus sa douleur était intense. Elle s’inquiète du développement de ce
-phénomène lié à l’exposition aux contenus anxiogènes en ligne,
-cristallisé au début des années 2000 par une « épidémie » de syndrome de
-la Tourette, due à une utilisation commune des réseaux par le même
-groupe de jeunes.</p>
+<ul>
+<li><p><strong>Effet Nocebo</strong> : en revanche, regarder TikTok (ou
+autre format très rapide, qui vous permet de consommer beaucoup de
+contenu en très peu de temps) peut vous rendre réellement malade. Plus
+précisément, lorsque vous regardez des contenus liés à un problème de
+santé (que ce soit une pathologie ou la pollution de l’air),
+l’algorithme va se mettre à vous en proposer beaucoup. Or, face à la
+sensation de danger, votre corps va se mettre à produire en masse de la
+cholécystokinine, une substance qui amplifie la douleur « quoi ? mais
+c’est complètement con ! » Pas du tout : face à un danger ou une
+épidémie, il s’agit d’un mécanisme évolutif qui nous pousse à être à
+l’écoute du moindre symptôme, pour pouvoir agir plus vite et augmenter
+les chances de survie. Ainsi, face à un danger similaire (par exemple,
+le fait de développer des maux de tête en haute altitude) 52% des
+personnes non-averties développeront des symptômes contre 86% de celles
+qui ont été prévenues. Ce décalage s’appelle l’effet Nocebo. La grande
+chef de file actuelle du domaine, l’Australienne <a href="https://www.unsw.edu.au/staff/kate-faasse">Kate Faasse</a>
+(https://www.unsw.edu.au/staff/kate-faasse), explique ainsi que, qui
+plus est, plus une personne avait entendu parler du risque, plus sa
+douleur était intense. Elle s’inquiète du développement de ce phénomène
+lié à l’exposition aux contenus anxiogènes en ligne, cristallisé au
+début des années 2000 par une « épidémie » de syndrome de la Tourette,
+due à une utilisation commune des réseaux par le même groupe de
+jeunes.</p></li>
+</ul>
 <hr className="my-8" />
 <h1 id="impasse-de-la-semaine">IMPASSE DE LA SEMAINE</h1>
 <ul>
